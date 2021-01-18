@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`auth reducer should handle LOGIN_FAILURE 1`] = `
+Object {
+  "error": Object {
+    "error": "bad validation",
+    "error_description": "incorrect code",
+    "error_uri": "/error",
+  },
+  "loggedIn": false,
+  "token": null,
+}
+`;
+
+exports[`auth reducer should handle LOGIN_SUCCESS 1`] = `
+Object {
+  "error": Object {},
+  "loggedIn": true,
+  "token": "anAccessToken",
+  "username": "Test Name",
+}
+`;
+
+exports[`auth reducer should handle LOGOUT 1`] = `
+Object {
+  "error": Object {},
+  "loggedIn": false,
+  "token": null,
+  "username": null,
+}
+`;
+
+exports[`auth reducer should handle initial state 1`] = `
+Object {
+  "error": Object {},
+  "loggedIn": false,
+  "token": null,
+  "username": null,
+}
+`;
